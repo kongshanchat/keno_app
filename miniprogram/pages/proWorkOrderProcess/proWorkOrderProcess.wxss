@@ -1,0 +1,42 @@
+/* pages/proWorkOrderProcess/proWorkOrderProcess.wxss */
+
+ff-canvas {
+    width: 750rpx;
+    height: 1000rpx;
+  }
+  
+.form_tle {
+    text-align: center;
+    font-size: 28rpx;
+    height: 28rpx;
+    padding: 26rpx 0;
+    font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(86,108,146,1);
+}
+
+.form_radio{
+
+}
+
+.group{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 24rpx;
+    padding-right:34rpx;
+}
+
+.van-radio__icon {
+    width:24rpx!important;
+    height: 24rpx!important;
+    line-height: 24rpx!important;
+    font-size: 24rpx!important;
+}
+.van-icon{
+    line-height:24rpx!important;
+}
+
+.van-radio__icon-wrap{
+    margin-top:8rpx!important;
+}

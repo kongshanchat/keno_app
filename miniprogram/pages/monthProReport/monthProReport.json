@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "van-tab": "../../dist/tab/index",
+        "van-tabs": "../../dist/tabs/index",
+        "van-icon": "../../dist/icon/index",
+        "ff-canvas": "../../f2-canvas/f2-canvas"
+    },
+    "navigationBarTitleText": "车间生产月报表"
+}

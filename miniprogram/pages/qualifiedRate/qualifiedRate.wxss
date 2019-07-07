@@ -1,0 +1,93 @@
+/* pages/qualifiedRate/qualifiedRate.wxss */
+
+#multi-bar-dom {
+    width: 100%;
+    height: 600rpx;
+  }
+  
+  #multi-scatter-dom {
+    width: 100%;  
+    height: 700rpx;  
+}
+
+#multi-radial-dom {
+  width: 100%;  
+  height: 700rpx;  
+}
+
+.form_tle_box{
+    padding-top: 40rpx;
+}
+
+.form_tle {
+    text-align: center;
+    font-size: 28rpx;
+    height: 28rpx;
+    padding: 26rpx 0;
+    font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(86,108,146,1);
+}
+
+.form_radio{
+margin-bottom: 48rpx;
+}
+
+.group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 24rpx;
+    width: 620rpx;
+    margin: 0 auto;
+
+}
+
+.van-radio{
+    width: 155rpx;
+    
+}
+
+.van-radio__icon {
+    width:24rpx!important;
+    height: 24rpx!important;
+    line-height: 24rpx!important;
+    font-size: 24rpx!important;
+}
+.van-icon{
+    line-height:24rpx!important;
+}
+
+.van-radio__icon-wrap{
+    margin-top:8rpx!important;
+}
+
+.month_select{
+    padding: 0 30rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 58rpx;
+    align-items: center;
+    /* margin-bottom:-100rpx; */
+}
+
+.month_select text{
+    font-size:24rpx;
+    color:#1284EC;
+}
+
+.month_select .month{
+    width: 580rpx;
+    border:1px solid rgba(195,193,193,1);
+border-radius:5px;
+box-sizing: border-box;
+position: relative;
+text-align: center;
+height: 58rpx;
+line-height: 58rpx;
+font-size:24rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(51,51,51,1);
+}

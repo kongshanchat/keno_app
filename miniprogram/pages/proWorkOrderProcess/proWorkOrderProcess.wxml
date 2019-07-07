@@ -1,0 +1,57 @@
+<!--pages/proWorkOrderProcess/proWorkOrderProcess.wxml-->
+<view class='top_tab_box'>
+    <view class='tab_wraper'>
+        <view class="tab_l {{curTab=='0'?'tab_active':''}}" data-index='0' bindtap='tabChange'>统计图形</view>
+        <view class="tab_r {{curTab=='1'?'tab_active':''}}" data-index='1' bindtap='tabChange'>数据表格</view>
+    </view>
+</view>
+<view class='holder'></view>
+<view class='noData' wx:if="{{noData==true}}">
+    <image src='../../images/nodata.png'></image>
+    <text>暂无数据</text>
+</view>
+<scroll-view wx:if="{{noData==false}}" class='tabCont' scroll-y style="height:{{scrollHeight}}px">
+    <view class="form_tle_box">
+        <view class="form_tle">
+            2019-06-13
+        </view>
+        <view class="form_radio" style="display:none">
+            <van-radio-group class="group" value="{{ radio }}" bind:change="onChange">
+            <van-radio name="1" style="margin-right:10rpx;">图形</van-radio>
+            <van-radio name="2" >表格</van-radio>
+            </van-radio-group>
+        </view>
+    </view>
+    <view class='cont1' wx:if="{{curTab=='0'}}">
+        
+        <view class="container">
+             <ff-canvas id="stack-dom" canvas-id="stack" opts="{{ opts }}"></ff-canvas>
+        </view>
+    </view>
+
+    <view class='cont2' wx:if="{{curTab=='1'}}">
+        <view class="table" >
+            <view class="tr">
+                <view class="th">工单编号</view>
+                <view class="th">产品名称</view>
+                <view class="th">计划数量</view>
+                <view class="th">完工数量</view>
+                <view class="th">达成率</view>
+            </view>
+            <view class="tr {{idx % 2 ==0 ? '':'strip'}}" wx:for="{{tableData}}" wx:for-index="idx">
+                <view class="td">{{item.productCode}}</view>
+                <view class="td">{{item.productName}}</view>
+                <view class="td">{{item.planAmount}}</view>
+                <view class="td">{{item.finishAmount}}</view>
+                <view class="td">{{item.dachenglv}}</view>
+            </view>
+        </view>
+        
+    </view>
+
+</scroll-view>
+
+
+<view class='bt_bg'>
+<image src='../../images/bottom_bg.png'></image>
+</view>

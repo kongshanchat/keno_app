@@ -1,0 +1,75 @@
+.index_box{
+    overflow: hidden;
+}
+
+.index_banner{
+    width: 100%;
+    padding: 26rpx 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.index_banner image{
+    width: 693rpx;
+    height: 252rpx;
+    margin:0 auto;
+}
+.index_box{
+    width: 552rpx;
+    margin: 0 auto;
+}
+
+.holder{
+    width:750rpx;
+height:12rpx;
+background:rgba(248,248,248,1);
+}
+
+.fun_display{
+    height: 30rpx;
+    padding: 30rpx 0;
+    line-height: 30rpx;
+    font-size: 30rpx;
+    font-family:PingFang-SC-Bold;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    border-bottom: 1rpx solid #E8E8E8;
+    width:100%;
+    position: relative;
+    text-indent: 50rpx;
+    margin-bottom: 40rpx;
+}
+.fun_display::before{
+    content:'';
+    width: 12rpx;
+    height:30rpx;
+    top:28rpx;
+    left:30rpx;
+    background: #011786;
+    border-radius: 6rpx;
+    position: absolute;
+}
+.box_item{
+    width: 184rpx;
+    height: 184rpx;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:24rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(51,51,51,1);
+margin-bottom: 46rpx;
+}
+
+.box_item image{
+    width: 120rpx;
+    height: 120rpx;
+    margin-bottom: 26rpx
+}
+.box_item {}

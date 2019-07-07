@@ -1,0 +1,60 @@
+/* pages/deviceStatus/deviceStatus.wxss */
+
+.tab_item_icon {
+    position: absolute;
+    width: 120rpx;
+    height: 120rpx;
+    top: 80rpx;
+}
+
+.van-cell {
+    height: 280rpx!important;
+    line-height: 280rpx!important;
+    box-sizing: border-box;
+    padding: 0rpx 48rpx!important;
+    padding-left:170rpx!important;
+}
+.van-cell__title{
+    line-height: 280rpx;
+    font-size:34rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+
+}
+
+.cont{
+    background:#f8f8f8!important;
+}
+
+
+.yunxing .van-cell__title{
+color:rgba(78,187,91,1);
+}
+
+.stop .van-cell__title{
+    color:#F88456
+}
+
+.repire .van-cell__title{
+    color:#499BFF
+}
+
+.cont text{
+    display: inline-block;
+    margin-right: 26rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    position: relative;
+    text-indent: 18rpx;
+}
+
+.cont text::before{
+    content: '';
+    position: absolute;
+    width:8rpx;
+    top: 16rpx;
+    left: 0;
+height:8rpx;
+background:rgba(78,187,91,1);
+border-radius:50%; 
+}

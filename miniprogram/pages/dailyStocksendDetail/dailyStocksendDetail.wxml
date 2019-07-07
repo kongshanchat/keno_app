@@ -1,0 +1,19 @@
+<view class="container" style='margin-bottom:124rpx;'>
+    <view class='canvas_tle tle_1'>发货数量汇总</view>
+  <ff-canvas id="multi-bar-dom" canvas-id="multi-bar" opts="{{ drawBar }}"></ff-canvas>
+    <view class='holder'></view>
+  <view class='canvas_tle tle_2'>发货数量占比汇总</view>
+  <ff-canvas id="multi-scatter-dom" canvas-id="multi-scatter" opts="{{ drawScatter }}"></ff-canvas>
+  
+</view>
+
+
+<view wx:if="{{noData==true}}" class='noData' style='margin-top:400rpx;'>
+    <image src='../../images/nodata.png'></image>
+    <text>暂无数据</text>
+</view>
+
+
+<view class='bt_bg'>
+    <image src='../../images/bottom_bg.png'></image>
+</view>

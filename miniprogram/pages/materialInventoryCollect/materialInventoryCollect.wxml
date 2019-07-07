@@ -1,0 +1,39 @@
+<!--pages/materialInventoryCollect/materialInventoryCollect.wxml-->
+<!-- <view class="month_select">
+    <text>产线名称:</text>
+    <view class="month">
+        <picker bindchange="lineChange" value="{{array[index].cxName}}" range="{{array}}" range-key="{{'cxName'}}">
+            <view class="picker">
+                {{array[index].cxName}}
+            </view>
+        </picker>
+    </view>
+</view> -->
+
+<view class="table" style="margin:32rpx auto;">
+    <view class="tr">
+        <view class="th">名称</view>
+        <view class="th">数量</view>
+        <view class="th">单位</view>
+    </view>
+    <view bindtap='todetail' data-id="{{item.date}}" class="tr {{idx % 2 ==0 ? '':'strip'}}" wx:for="{{circleData}}" wx:for-index="idx">
+        <view class="td">{{item.enumName}}</view>
+        <view class="td">{{item.amount}}</view>
+        <view class="td">{{item.materialUnit}}</view>
+    </view>
+</view>
+<view class='holder'></view>
+
+<view class="container" style='margin-top:-120rpx;'>
+    <ff-canvas id="multi-scatter-dom" canvas-id="multi-scatter" opts="{{ drawScatter }}"></ff-canvas>
+</view>
+
+<view class='tab_box'>
+    <view class='tab_item' bindtap='toDetail' data-id="{{item.enumValue}}" wx:for="{{circleData}}">{{item.enumName}}</view>
+</view>
+
+
+
+<view class='bt_bg'>
+    <image src='../../images/bottom_bg.png'></image>
+</view>

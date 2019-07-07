@@ -1,0 +1,40 @@
+<view class='body'>
+<view class='index_banner'>
+    <image src='../../images/topBg.png'></image>
+    <view class='logo'>
+        <image src='../../images/logo.png'></image>
+    </view>
+    <view class='logo_title'>科诺数字化车间执行系统</view>
+</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='vanForm'>
+        <view class='form_item'>
+            <image src='../../images/user.png'></image>
+            <input type='text' placeholder='用户名' name='username' placeholder-class='login_inpu'></input>
+        </view>
+        <view class='form_item'>
+            <image src='../../images/key.png'></image>
+            <input type='password' placeholder='密  码' name='password' placeholder-class='login_inpu'></input>
+        </view>
+        <view class='forget' icon="question-o" bindtap='forget'>忘记密码?</view>
+    </view>
+
+  <view class="btn-area">
+    <view class='dot_left'>
+        <view class='dot'></view>
+        <view class='dot'></view>
+        <view class='dot'></view>
+    </view>
+    <button type="primary" form-type="submit" loading="{{loading}}"
+  disabled="{{disabled}}"> 登录 </button>
+  <view class='dot_right'>
+    <view class='dot'></view>
+        <view class='dot'></view>
+        <view class='dot'></view>
+  </view>
+  </view>
+</form>
+
+</view>
+

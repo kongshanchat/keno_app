@@ -1,0 +1,23 @@
+<scroll-view  scroll-y style="height:{{scrollHeight}}px">
+<view class="form_tle_box">
+       
+        <view class="form_radio">
+            <van-radio-group class="group" value="{{ curMonth }}" bind:change="radioChange">
+            <van-radio wx:for="{{month}}" data-name="{{item}}" name="{{item}}">{{item}}</van-radio>
+            
+            </van-radio-group>
+        </view>
+    </view>
+<view class="container">
+    <view class='canvas_tle tle_1'>成品发货月报</view>
+  <ff-canvas id="multi-bar-dom" canvas-id="multi-bar" opts="{{ drawBar }}"></ff-canvas>
+    <view class='holder'></view>
+  <view class='canvas_tle tle_2'>发货数量占比汇总</view>
+  <ff-canvas id="multi-scatter-dom" canvas-id="multi-scatter" opts="{{ drawScatter }}"></ff-canvas>
+  </view>
+</scroll-view>
+
+
+<view class='bt_bg'>
+    <image src='../../images/bottom_bg.png'></image>
+</view>

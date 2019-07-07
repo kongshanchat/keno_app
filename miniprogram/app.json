@@ -1,0 +1,25 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/dailyProReport/dailyProReport",
+        "pages/monthProReport/monthProReport",
+        "pages/proWorkOrderProcess/proWorkOrderProcess",
+        "pages/qualifiedRate/qualifiedRate",
+        "pages/materialInventoryCollect/materialInventoryCollect",
+        "pages/materialDetail/materialDetail",
+        "pages/stockCollect/stockCollect",
+        "pages/dailyStocksend/dailyStocksend",
+        "pages/dailyStocksendDetail/dailyStocksendDetail",
+        "pages/monthStocksend/monthStocksend",
+        "pages/deviceStatus/deviceStatus"
+    ],
+    "window": {
+        "backgroundColor": "#011786",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#011786",
+        "navigationBarTitleText": "科诺数字化车间执行系统",
+        "navigationBarTextStyle": "white"
+    },
+    "sitemapLocation": "sitemap.json"
+}

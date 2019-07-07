@@ -1,0 +1,139 @@
+/**app.wxss**/
+@import "./dist/common/index.wxss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.bt_bg {
+    position: fixed;
+    bottom: 0rpx;
+    height: 123rpx;
+    width: 100%;
+}
+
+.bt_bg image {
+    height: 123rpx;
+    width: 100%;
+}
+
+.holder {
+    width: 750rpx;
+    height: 12rpx;
+    background: rgba(248, 248, 248, 1);
+}
+
+.top_tab_box {
+    padding: 36rpx 30rpx;
+}
+
+.tab_wraper {
+    line-height: 60rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    color: #499bff;
+    width: 690rpx;
+    height: 60rpx;
+    margin: 0 auto;
+    border-radius: 10rpx;
+    -webkit-appearance: none;
+    box-shadow: 0 0 0 1px rgba(0, 92, 211, 1) inset;
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 92, 211, 1) inset;
+}
+
+.tab_wraper view {
+    text-align: center;
+    width: 50%;
+    font-size: 28rpx;
+}
+
+.tab_active {
+    font-family: PingFang-SC-Regular;
+    color: rgba(254, 255, 255, 1);
+    background: #1890ff;
+}
+
+.strip {
+    background: #f8f8f8;
+}
+
+.table {
+    box-shadow:0 0 0 1rpx #dadada inset;
+    -webkit-appearance: none;
+    -webkit-box-shadow:0 0 0 1px solid #adadad inset;
+    border-right: 0;
+    border-bottom: 0;
+    width: 690rpx;
+    font-size: 28rpx;
+    margin: 0 auto;
+}
+
+.tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.th, .td {
+    height: 50rpx;
+    line-height: 50rpx;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    text-align: center;
+    box-sizing: border-box;
+    color: #464646;
+    font-size: 24rpx;
+    width: 100%;
+}
+
+.th {
+    font-weight: 400;
+    background: #d6e6f9;
+}
+
+.serach {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 88rpx;
+    border-bottom: 1rpx solid #dadada;
+    width: 750rpx;
+    line-height: 88rpx;
+    font-size: 28rpx;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+}
+
+/* .section{
+    margin-bottom:30rpx;
+} */
+
+.noData{
+    width: 750rpx;
+    height: 300rpx;
+    flex-direction: column;
+    margin-top:100rpx;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36rpx;
+    color: #adadad
+}
+
+.noData image{
+    width: 180rpx;
+    height: 144rpx;
+    margin-bottom: 30rpx;
+}

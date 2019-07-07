@@ -1,0 +1,61 @@
+<!--pages/proWorkOrderProcess/proWorkOrderProcess.wxml-->
+<view class='top_tab_box'>
+    <view class='tab_wraper'>
+        <view class="tab_l {{curTab=='0'?'tab_active':''}}" data-index='0' bindtap='tabChange'>合格率</view>
+        <view class="tab_r {{curTab=='1'?'tab_active':''}}" data-index='1' bindtap='tabChange'>不合格原因</view>
+    </view>
+</view>
+<view class='holder'></view>
+<scroll-view class='tabCont' scroll-y style="height:{{scrollHeight}}px">
+    <view class="form_tle_box">
+
+        <view class="form_radio">
+            <van-radio-group class="group" value="{{ lineId }}" bind:change="radioChange">
+                <van-radio wx:for="{{lineData}}" data-name="{{item.cxName}}" name="{{item.cxId}}">{{item.cxName}}</van-radio>
+
+            </van-radio-group>
+        </view>
+    </view>
+    <view class='cont1' wx:if="{{curTab=='0'}}">
+
+        <view class="container">
+            <ff-canvas id="multi-bar-dom" canvas-id="multi-bar" opts="{{ drawBar }}"></ff-canvas>
+        </view>
+    </view>
+
+    <view class='cont2' wx:if="{{curTab=='1'}}">
+        <block wx:if="{{noData==false}}">
+            <view class="month_select">
+                <text>月  份:</text>
+                <view class="month">
+                    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                        <view class="picker">
+                            {{array[index]}}
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class="container">
+                <ff-canvas id="multi-scatter-dom" canvas-id="multi-scatter" opts="{{ drawScatter }}"></ff-canvas>
+            </view>
+
+
+            <view class="container">
+                <ff-canvas id="multi-radial-dom" canvas-id="multi-radial" opts="{{ drawRadial }}"></ff-canvas>
+            </view>
+
+        </block>
+        <view class='noData'>
+            <image src='../../images/nodata.png'></image>
+            <text>暂无数据</text>
+        </view>
+
+
+    </view>
+
+</scroll-view>
+
+
+<view class='bt_bg'>
+    <image src='../../images/bottom_bg.png'></image>
+</view>

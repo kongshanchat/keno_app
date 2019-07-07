@@ -1,0 +1,157 @@
+/* pages/login/login.wxss */
+.index_banner{
+    width: 100%;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.index_banner > image{
+    width: 100%;
+    height: 420rpx;
+    
+}
+
+.logo image:nth-of-type(1){
+    width: 344rpx;
+    height: 63rpx;
+}
+.logo_title{
+    
+    font-size: 28rpx;
+    color: #adadad
+}
+.vanForm{
+    width:590rpx;
+    margin: 0 auto;
+    margin-top: 53rpx;
+}
+.form_item{
+    height: 84rpx;
+    width:590rpx;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 0 0 1px #005DD3 inset;
+    margin-bottom: 32rpx;
+}
+.form_item > image{
+    width: 40rpx;
+    height: 40rpx;
+    margin: 0 20rpx;
+}
+.login_inpu{
+    font-size: 30rpx;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(80,80,80,1);
+    
+}
+.form_item input {
+    padding-left:20rpx; 
+    height: 52rpx;
+    line-height: 52rpx;
+    position: relative;
+    font-size: 30rpx;
+}
+.form_item input::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12rpx;
+    height: 28rpx;
+    width:2rpx;
+    background:#005DD3;
+}
+
+.forget{
+    float:right;
+    border-bottom: 1rpx solid rgba(180,180,180,1);
+    margin-top:-20rpx;
+    text-align: right;
+    font-size:24rpx;
+font-family:MicrosoftYaHei;
+font-weight:400;
+color:rgba(127,127,127,1);
+}
+
+.btn-area{
+    margin-top: 100rpx;
+    position: relative;
+}
+.btn-area button{
+    font-family:59--Regular;
+font-weight:400;
+    width:470rpx;
+height:78rpx;
+line-height: 78rpx;
+    margin-left:140rpx;
+    border-radius: 39rpx;
+    background:linear-gradient(90deg,rgba(33,103,252,1) 0%,rgba(87,178,253,1) 100%);
+}
+.dot_right ,.dot_left{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 78rpx;
+    line-height: 78rpx;
+    z-index: 999;
+    top:0
+}
+.dot_left{
+    left: 235rpx;
+}
+
+.dot_left view:nth-of-type(1){
+    width:6rpx;
+height:6rpx;
+background:rgba(255,255,255,1);
+border-radius:50%;
+margin-right: 15rpx;
+}
+
+.dot_left view:nth-of-type(2){
+ width:8rpx;
+height:8rpx;
+background:rgba(255,255,255,1);
+border-radius:50%;
+margin-right: 15rpx;
+}
+
+.dot_left view:nth-of-type(3){
+    width:10rpx;
+height:10rpx;
+background:rgba(255,255,255,1);
+border-radius:50%;
+}
+
+.dot_right{
+    right: 235rpx;
+}
+
+.dot_right view:nth-of-type(1){
+    width:10rpx;
+height:10rpx;
+background:rgba(255,255,255,1);
+border-radius:50%;
+margin-right: 15rpx;
+}
+
+.dot_right view:nth-of-type(2){
+    width:8rpx;
+height:8rpx;
+background:rgba(255,255,255,1);
+border-radius:50%;
+margin-right: 15rpx;
+}
+.dot_right view:nth-of-type(3){
+    width:6rpx;
+height:6rpx;
+background:rgba(255,255,255,1);
+border-radius:50%;
+}

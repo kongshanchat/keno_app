@@ -1,0 +1,57 @@
+<!--pages/dailyProReport/dailyProReport.wxml-->
+
+<view class='top_tab_box'>
+    <view class='tab_wraper'>
+        <view class="tab_l {{curTab=='0'?'tab_active':''}}" data-index='0' bindtap='tabChange'>{{daily}}</view>
+        <view class="tab_r {{curTab=='1'?'tab_active':''}}" data-index='1' bindtap='tabChange'>{{curMonth}}</view>
+    </view>
+</view>
+<view class='holder'></view>
+
+<scroll-view class='tabCont' scroll-y style="height:{{scrollHeight}}px">
+    <view class='cont1' wx:if="{{curTab=='0'}}">
+        <view class="container">
+            <ff-canvas id="bar" canvas-id="bar" opts="{{ opts }}"></ff-canvas>
+        </view>
+    </view>
+
+    <view class='cont2' wx:if="{{curTab=='1'}}">
+        <view class='serach'>
+            <view class="section">
+
+                <view class="month_select">
+                    <text>产线名称:</text>
+                    <view class="month">
+                        <picker bindchange="bindPickerChange" value="{{array[index].cxName}}" range="{{array}}" range-key="{{'cxName'}}">
+                            <view class="picker">
+                                {{array[index].cxName}}
+                            </view>
+                        </picker>
+                    </view>
+                </view>
+            </view>
+
+        </view>
+        <view class="container">
+            <view class="table">
+                <view class="tr">
+                    <view class="th">日期</view>
+                    <view class="th">计划产量</view>
+                    <view class="th">完成产量</view>
+                    <view class="th">达成率</view>
+
+                </view>
+                <view class="tr {{idx % 2 ==0 ? '':'strip'}}" wx:for="{{proLineData}}" wx:for-index="idx">
+                    <view class="td">{{item.dailyDate}}</view>
+                    <view class="td">{{item.planAmount}}</view>
+                    <view class="td">{{item.finishAmount}}</view>
+                    <view class="td">{{item.dachenglv}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+
+<view class='bt_bg'>
+    <image src='../../images/bottom_bg.png'></image>
+</view>

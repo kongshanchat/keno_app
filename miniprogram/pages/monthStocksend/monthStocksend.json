@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "van-icon": "../../dist/icon/index",
+      "van-radio": "../../dist/radio/index",
+      "van-radio-group": "../../dist/radio-group/index",
+        "ff-canvas": "../../f2-canvas/f2-canvas"
+    },
+    "navigationBarTitleText": "成品发货月报表"
+}

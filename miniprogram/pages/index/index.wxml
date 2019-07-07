@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<view class="container">
+
+<view class='index_banner'>
+<image src='../../images/banner.png'></image>
+</view>
+
+<view class='holder'></view>
+
+<view class='fun_display'>
+    对应系统
+</view>
+
+<view class='index_box'>
+    <view class='box_item' bindtap='toPage' data-page="dailyProReport">
+        <image src='../../images/ribao.png'></image>
+        <view>生产日报</view>
+    </view>
+    <view class='box_item' data-page="monthProReport" bindtap='toPage'>
+        <image src='../../images/zhoubao.png'></image>
+        <view>生产月报</view>
+    </view>
+    <view class='box_item' data-page="proWorkOrderProcess" bindtap='toPage'>
+        <image src='../../images/process.png'></image>
+        <view>生产工单进度</view>
+    </view>
+    <view class='box_item' data-page="qualifiedRate" bindtap='toPage'>
+        <image src='../../images/hegelv.png'></image>
+        <view>合格率</view>
+    </view>
+    <view class='box_item' data-page="materialInventoryCollect" bindtap='toPage'>
+        <image src='../../images/yuancailiao.png'></image>
+        <view>原材料库存汇总</view>
+    </view>
+    <view class='box_item' data-page="stockCollect" bindtap='toPage'>
+        <image src='../../images/banchengpin.png'></image>
+        <view>成品库存汇总</view>
+    </view>
+    <view class='box_item' data-page="dailyStocksend" bindtap='toPage'>
+        <image src='../../images/day.png'></image>
+        <view>成品发货日报</view>
+    </view>
+    <view class='box_item' data-page="monthStocksend" bindtap='toPage'>
+        <image src='../../images/month.png'></image>
+        <view>成品发货月报</view>
+    </view>
+    <view class='box_item' data-page="deviceStatus" bindtap='toPage'>
+        <image src='../../images/device.png'></image>
+        <view>设备状态监控</view>
+    </view>
+</view>
+
+
+</view>
+
+<view class='bt_bg'>
+<image src='../../images/bottom_bg.png'></image>
+</view>
